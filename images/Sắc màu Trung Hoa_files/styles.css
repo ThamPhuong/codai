@@ -1,0 +1,183 @@
+*{margin:0; padding: 0;}
+body,html {height: 100%;width: 100%; overflow-x: hidden;}
+body {
+    color: #2f2f2f;
+    font-family: "Montserrat";
+    text-align: center;
+    background-color: #00001a;
+    /* font-family: 'HelveticaNeueLTPro-Md'; */
+}
+/* Navigation Bar */
+.navbar {
+    background-color:white;
+}
+.navbar-brand{
+    font-family: "Ubuntu";
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.nav-item {
+    padding-left:20px;
+}
+.nav-link {
+    font-size: 1.2rem;
+    font-family: "Montserrat-Light";
+}
+i.fa.fa-user-circle.user {
+    color: black;
+    font-size: 30px;
+    margin-right: 20px;
+    padding: 10px;
+}
+.smallerNav {
+    height: 50px;
+}
+/* Styles for slides wrapper */
+/* styles for text title */
+
+/* Stles for slides */
+.slideWrapper {position: relative; height: 100%; width: 100%;overflow: hidden; margin-top:55px;}
+.slides{height: 100%; width:100%; position: absolute; }
+.slides ul {height: 100%; position: relative;}
+.slides li{ height: 100%;width: 100%;}
+.oneSlide { height: 100%;width: 100%;}
+.oneSlide img {
+    width: 100%;
+}
+.oneSlide .titleFilm{
+    z-index: 3;
+    width: 16%;
+    top: 30%;
+    opacity: 1;
+    left: 5%;
+    position: absolute;
+    transition: 0.4s;
+}
+.titleFilm small{
+    font-size: 25px;
+    display: block;
+    font-weight: bold;
+    padding: 10px 0 10px 0;
+    opacity: 0;
+    color: white;
+}
+.titleFilm p{
+    font-size: 14px;
+    line-height: 20px;
+    color: #dddddd8a;
+    opacity:0;
+}
+.titleFilm hr{
+    width: 20%;
+    border: 1px solid white;
+    opacity: 0;
+}
+.titleFilm .btnMore {
+    border: 1px solid white;
+    padding:8px 10px;
+    border-radius: 5%;
+    text-decoration: none;
+    opacity: 0;
+    color: white;
+}
+.slides ul li.actived .titleFilm small,
+.slides ul li.actived .titleFilm p,
+.slides ul li.actived .titleFilm hr,
+.slides ul li.actived .titleFilm .btnMore{
+    animation:moveText 1s forwards;
+}
+@-webkit-keyframes moveText{
+    from{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.slides ul li.actived .titleFilm small {animation-delay: 1s;}
+.slides ul li.actived .titleFilm hr {animation-delay: 1.2s;}
+.slides ul li.actived .titleFilm p{animation-delay: 1.4s;}
+.slides ul li.actived .titleFilm .btnMore{animation-delay: 1.6s;}
+.slides ul li{
+    height: 100%;
+    width: 100%;
+    list-style: none;
+    position: absolute;
+    opacity: 0;
+    transition: 0.4s;
+}
+.slides ul li.actived {opacity: 1;}
+.moveSlides {
+    text-align:center;
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 4;
+}
+.moveSlides ul{text-align:center; transition: 0.4s;}
+.moveSlides ul li{
+    display: inline-block;
+    border:1px gray solid;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-indent: -10000px;
+    margin: 20px 10px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.moveSlides ul li:hover,.active {  background: black;}
+.col-sm-4.history img{
+    width: 124px;
+    height: 103px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+/* footer */
+.footer {
+    color: #00001a;
+    text-align: center;
+    background: white;
+    padding: 40px;
+}
+.footer .icon{
+    color:#00001a;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.footer h1 {
+    font-family: "Ubuntu";
+    font-size: 3.13rem;
+    font-weight: bold;
+}
+
+/* Main */
+.container-fluid {
+    background: #00001a;
+    padding: 20px 0;
+}
+.content {
+    margin: 10px 50px;
+}
+.content hr {
+    border-top: 20px dotted #6c757d;
+    width: 10%;
+    margin-left: 45%;
+}
+.content h2 {
+    color: white;
+    padding: 20px 0;
+}
+.item p{
+    color:#f2f2f2;
+    padding:20px 0;
+}
+.item img{
+    width: 100%;
+}
+*{margin:0; padding: 0;}
