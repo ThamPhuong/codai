@@ -128,7 +128,7 @@ i.fa.fa-user-circle.user {
 @media screen and (max-width:45rem)
 {
     .oneSlide .titleFilm small{
-        font-size: 20px;
+        font-size: 15px;
         margin-bottom: 10px;
     }
 }
@@ -214,7 +214,7 @@ i.fa.fa-user-circle.user {
         height: 15px;
     }
 }
-.moveSlides ul li:hover,.active {  background: black;}
+.moveSlides ul li:hover,.active {  background: rgb(170, 141, 121);}
 .col-sm-4.history img{
     width: 124px;
     height: 103px;
@@ -242,14 +242,18 @@ i.fa.fa-user-circle.user {
     padding-right: 66px;
     clear: both;
 }
-@media screen and (max-width:540px)
+.posts {
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+@media screen and (max-width:33.75rem)
 {
     .content:not(.full-width), .posts:not(.full-width){
         padding-left:23px;
         padding-right: 23px;
     }
 }
-@media screen and (max-width:700px){
+@media screen and (max-width:700px)and (min-width:33.75rem){
     .content:not(.full-width), .posts:not(.full-width){
         padding-left: 35px;
         padding-right: 35px;
@@ -265,7 +269,8 @@ i.fa.fa-user-circle.user {
 }
 .container-fluid h2 {
     color: white;
-    padding: 20px 0;
+    padding: 10px;
+    padding-bottom: 0;
 }
 @media screen and (max-width:540px)
 {
@@ -276,7 +281,7 @@ i.fa.fa-user-circle.user {
 }
 hr.long {
     border-top: 1px solid #212529;
-    margin: auto 5%;
+    margin: 4rem 5%;
 }
 .listpost .post-meta .post-title {
     -webkit-box-ordinal-group: 3;
@@ -326,7 +331,7 @@ hr.long {
 }
 /* ----------------------------------- */
 /* Last posts */
-.history .widget {
+.history  {
     /* margin-top: 50px; */
 }
 .history .widget-posts .title-posts {
@@ -389,6 +394,11 @@ hr.long {
 .row.postWrap {
     -webkit-box-direction: normal;
 }
+.listpost .link-img {
+    display: block;
+    position: relative;
+}
+
 @media screen and (max-widtht:540px){
     .listpost .link-img {
         display:block;
@@ -396,7 +406,20 @@ hr.long {
 }
 .listpost .link-img img {
     display: block;
-    position: relative;
+    max-width: 100%;
+}
+@media screen and (max-width:540px)
+{
+    .listpost .link-img img{
+        max-width: initial;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 767px) and (min-width:540px)
+{
+    .post-content img {
+        will-change: initial;
+    }
 }
 
 article.listpost {
@@ -447,11 +470,6 @@ article.listpost {
 .item img{
     width: 100%;
 }
-
-.posts {
-    padding-top: 50px;
-    /* background: white; */
-}
 .post-footer a.btn-read-more {
     color: white;
     border: 2px solid;
@@ -489,17 +507,48 @@ listpost .post-footer {
 @media screen and (max-width:540px)
 {
     .listpost .post-thumb {
-        max-width: inherit;
+        max-width: initial;
     }
 }
-@media screen and (max-width:767px){
+@media screen and (max-width:767px)and (min-width:540px){
     .listpost .post-thumb {
         max-width: 30%;
     }
 }
-.listpost .link-img {
-    display: block;
-    position: relative;
+/* ----Test */
+element.style {
+    transform: none;
+}
+@media (max-width: 940px)
+{
+    .posts {
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 1200px)
+{
+    .posts {
+        padding: 0 35px;
+        width: 100%;
+    }
+}
+.posts {
+    margin: 0 auto;
+    /* margin-top: 65px; */
+    margin-bottom: 100px;
+}
+@media screen and (min-width:540px)and (max-width:1024px)
+{
+    .posts .row.ts-row{
+        display: block;
+    }
+}
+@media screen and (min-width:540px)and (max-width:1024px)
+{
+    .col-sm-8.mainPost, .col-sm-4.history {
+        max-width: 100%;
+    }
 }
 /* --------------------------------------------------------------------------------- */
 /* footer */
