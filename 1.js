@@ -37,7 +37,6 @@
         // lan theo ve truoc no de culculate the index of slide
         for (positionSlide = 0; slideNow = slideNow.previousElementSibling; positionSlide++) { }
         if (positionSlide < slides.length - 1) {
-            console.log('position ' + positionSlide);
             for (var j = 0; j < slides.length; j++) {
                 slides[j].classList.remove('actived');
                 btn[j].classList.remove('active');

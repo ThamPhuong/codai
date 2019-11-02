@@ -266,11 +266,12 @@ i.fa.fa-user-circle.user {
     border-top: 20px dotted #6c757d;
     width: 10%;
     margin-left: 45%;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 .container-fluid h2 {
     color: white;
-    padding: 10px;
-    padding-bottom: 0;
+    padding-bottom: 30px;
 }
 @media screen and (max-width:540px)
 {
@@ -288,8 +289,75 @@ hr.long {
     order: 2;
     width: 100%;
 }
+* {margin:0;padding:0;}
+
+.content .col-sm-4.item {
+    padding-bottom: 35px;
+}
+
+.content .row {
+    /* margin-bottom: 40px; */
+}
+
+.content .item-infor .row.row-2col {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    /* color: gray; */
+}
+
+.content .item-infor .row:last-of-type {
+    margin-bottom: 0;
+}
+
+.item-infor h3 a {
+    color: white;
+}
+
+.content .item-info .row:first-of-type {
+    height: auto;
+    white-space: inherit;
+}
+
+.content .item-infor .row {
+    height: 20px;
+    margin-bottom: 12px;
+    line-height: 20px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.box-left {
+    height: 20px;
+    padding-right: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.content h3 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0.5px;
+}
+
+.content .item-infor {
+    position: relative;
+    clear: both;
+    background-color: #000033;
+    color: #dee2e6;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    padding: 20px;
+}
 /* ---------------------------------------------------------------------------- */
-/* Bài viết */
+/* BÃ i viáº¿t */
 
 /* ----------------------------------------- */
 /* Categories */
