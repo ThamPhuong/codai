@@ -116,13 +116,20 @@ i.fa.fa-user-circle.user {
 @media screen and (max-width:45rem)
 {
     .oneSlide .titleFilm{
-        width: 50%;
+        width: 80%;
     }
 }
 @media screen and (max-width:45rem)
 {
     .oneSlide .titleFilm p, .oneSlide .titleFilm hr{
         display: none;
+    }
+}
+@media screen and (max-width:45rem)
+{
+    .oneSlide .titleFilm small{
+        font-size: 20px;
+        margin-bottom: 10px;
     }
 }
 .titleFilm small{
