@@ -17,6 +17,7 @@ footer, header, nav, section, summary, time, mark, audio, video, button, input, 
     font-size: 100%;
     font-family: inherit;
 }
+
 *, :after, :before {
     box-sizing: border-box;
     margin: 0;
@@ -242,9 +243,12 @@ i.fa.fa-user-circle.user {
     padding-right: 66px;
     clear: both;
 }
+.content.category, .posts.category{
+    padding-top:150px;
+}
 .posts {
     margin: 0 auto;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 @media screen and (max-width:33.75rem)
 {
@@ -258,9 +262,6 @@ i.fa.fa-user-circle.user {
         padding-left: 35px;
         padding-right: 35px;
     }
-}
-.content row {
-    padding-top:30px;
 }
 .content hr {
     border-top: 20px dotted #6c757d;
@@ -290,15 +291,9 @@ hr.long {
     width: 100%;
 }
 * {margin:0;padding:0;}
-
-.content .col-sm-4.item {
-    padding-bottom: 35px;
+.content .row{
+    padding-bottom:35px;
 }
-
-.content .row {
-    /* margin-bottom: 40px; */
-}
-
 .content .item-infor .row.row-2col {
     display: flex;
     justify-content: space-between;
@@ -357,7 +352,7 @@ hr.long {
     padding: 20px;
 }
 /* ---------------------------------------------------------------------------- */
-/* BÃ i viáº¿t */
+/* BÃƒÂ i viÃ¡ÂºÂ¿t */
 
 /* ----------------------------------------- */
 /* Categories */
@@ -434,7 +429,6 @@ hr.long {
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 35px;
-    margin-top: 50px;
     padding: 15px;
 }
 /* --------------------------------- */
@@ -449,7 +443,7 @@ hr.long {
 .listpost {
     display: flex;
     width: 100%;
-    margin-top: 50px;
+    margin-bottom: 50px;
     padding-top: 0;
     border: 0;
 }
