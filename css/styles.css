@@ -291,9 +291,11 @@ hr.long {
     width: 100%;
 }
 * {margin:0;padding:0;}
-.content .row{
-    padding-bottom:35px;
+
+.content .row .item {
+    padding-bottom: 35px;
 }
+
 .content .item-infor .row.row-2col {
     display: flex;
     justify-content: space-between;
