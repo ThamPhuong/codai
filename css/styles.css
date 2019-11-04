@@ -33,14 +33,14 @@ body {
     color: #2f2f2f;
     font-family: "Montserrat";
     text-align: center;
-    background-color: #00001a;
+    background-color: #000d1a;
 }
 body,html {height: 100%;width: 100%; overflow-x: hidden;}
 
 /* ------------------------------------------------------------------------ */
 /* Navigation Bar */
-.navbar {
-    background-color:white;
+.mynav {
+    background-color:#000;
 }
 .navbar-brand,
 .footer h1 {
@@ -56,7 +56,7 @@ body,html {height: 100%;width: 100%; overflow-x: hidden;}
     font-family: "Montserrat-Light";
 }
 i.fa.fa-user-circle.user {
-    color: black;
+    color: white;
     font-size: 30px;
     margin-right: 20px;
     padding: 10px;
@@ -69,7 +69,7 @@ i.fa.fa-user-circle.user {
     width: 100%;
     overflow: hidden;
     margin-top:55px;
-    background-color: #00001a;
+    background-color: #000d1a;
 }
 @media screen and (max-width:33.75rem){
     .slideWrapper{
@@ -231,7 +231,7 @@ i.fa.fa-user-circle.user {
 /* ------------------------------------------------------------------------------------------------------------ */
 /* Main */
 .container-fluid {
-    background: #00001a;
+    background:#000d1a;
     padding: 20px 0;
 }
 
@@ -343,7 +343,7 @@ hr.long {
 .content .item-infor {
     position: relative;
     clear: both;
-    background-color: #000033;
+    background-color:#001a33;
     color: #dee2e6;
     flex: 1;
     display: flex;
@@ -492,7 +492,6 @@ article.listpost {
 .listpost .post-content {
     display: block;
     align-self: center;
-    vertical-align: top;
     padding-left: 30px;
     color: wheat;
 }
@@ -617,13 +616,13 @@ element.style {
 /* --------------------------------------------------------------------------------- */
 /* footer */
 .footer {
-    color: #00001a;
+    color: white;
     text-align: center;
-    background: white;
+    background-color: #000;
     padding: 40px;
 }
 .footer .icon{
-    color:#00001a;
+    color:white;
     padding: 20px;
     font-size: 30px;
 }
