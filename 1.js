@@ -1,12 +1,21 @@
 ﻿document.addEventListener("DOMContentLoaded", function () {
     var btn = document.querySelectorAll('.moveSlides ul li');
     var slides = document.querySelectorAll('.slides ul li');
+    var list_categories = document.querySelector('.mynav .nav-item ul.dropdown-menu');
+    var nav_categories = document.querySelector('.mynav .nav-item .nav-categories');
+
     var timeAutoSlides = setInterval(function () { autoSlides(); }, 4000);
-
-
-
-    window.addEventListener('scroll', function () {
-        this.alert("scroll run");
+    nav_categories.addEventListener('mouseover',function(){
+        list_categories.style.display = "block";
+    });
+    list_categories.addEventListener('mouseover',function(){
+        this.style.display = "block";
+    });
+    nav_categories.addEventListener('mouseout',function(){
+        list_categories.style.display = "none";
+    });
+    list_categories.addEventListener('mouseout',function(){
+        this.style.display = "none";
     });
     // bat su kien click cho tung button
     for (var i = 0; i < btn.length; i++) {
@@ -54,5 +63,8 @@
             slides[0].classList.add('actived');
             btn[0].classList.add('active');
         }
+    }
+    function showCategories(){
+
     }
 }, false);

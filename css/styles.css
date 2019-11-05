@@ -23,6 +23,13 @@ footer, header, nav, section, summary, time, mark, audio, video, button, input, 
     margin: 0;
     padding: 0;
 }
+
+.nav-item input.form-control.mr-sm-2 {
+}
+
+form.form-inline.my-3.mr-3 {}
+
+div#navb {padding: 0!important;}
 a {
     text-decoration: none;
 }
@@ -41,23 +48,99 @@ body,html {height: 100%;width: 100%; overflow-x: hidden;}
 /* Navigation Bar */
 .mynav {
     background-color:#000;
+    color:white;
+    padding: 0!important;
 }
+.mynav a{
+    color:white;
+    font-size: 18px;
+}
+
+a.nav-link:hover + ul.dropdown-menu {
+    display: block;
+}
+
+navbar-item .nav-link:hover + ul {
+    display: block;
+}
+.mynav a:hover{
+    background:#000d1a;
+    height: 100%;
+    color:wheat;
+}
+
+/* navbar-nav a.nav-link:hover +ul {
+    display: block;
+} */
 .navbar-brand,
 .footer h1 {
     font-family: "Ubuntu";
-    font-size: 2.5rem;
     font-weight: bold;
+    padding-left: 15px;
+}
+.navbar-brand.myLogo{
+    font-size: 2rem;
+}
+
+.dropdown-menu li a {
+    white-space: normal;
+    padding:8px 15px;
+    display:block;
+    font-size:15px;
+    width:100%;
+    transition:0.4s;
+}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+    text-decoration: none;
+    color: #fff;
+    background-color: #3577b1;
+    transition:0.4s;
+}
+@media screen and (min-width:992px){
+    .dropdown-menu li {
+        float: left;
+        width: 200px;
+        display:inline-table;
+    }
+}
+.navbar-nav ul.dropdown-menu {
+    width: 600px;
+    z-index: 10000;
+    padding: 0;
+    transition: 0.4s;
+}
+.navbar-nav .dropdown .dropdown-menu:after
+{
+    content: '';
+    display: block;
+    z-index: 999;
+    top: -20px;
+    left: 30px;
+    width: 0;
+    height: 0;
+    border: 10px rgba(255, 215, 0, 0) solid;
+    border-bottom-color: #1f3d58;
+    position: absolute;
+}
+
+ul.dropdown-menu {
+    border: none;
+    right: 0;
+    background: #1f3d58!important;
+    border-radius: 0;
+    display: none;
 }
 .nav-item {
     padding-left:20px;
+    align-self: center;
 }
 .nav-link {
-    font-size: 1.2rem;
+    /* font-size: 1.2rem !important; */
     font-family: "Montserrat-Light";
 }
 i.fa.fa-user-circle.user {
     color: white;
-    font-size: 30px;
+    font-size: 25px;
     margin-right: 20px;
     padding: 10px;
 }
@@ -70,6 +153,7 @@ i.fa.fa-user-circle.user {
     overflow: hidden;
     margin-top:55px;
     background-color: #000d1a;
+    margin-top: 0;
 }
 @media screen and (max-width:33.75rem){
     .slideWrapper{
@@ -291,7 +375,6 @@ hr.long {
     width: 100%;
 }
 * {margin:0;padding:0;}
-
 .content .row .item {
     padding-bottom: 35px;
 }
@@ -343,7 +426,7 @@ hr.long {
 .content .item-infor {
     position: relative;
     clear: both;
-    background-color:#001a33;
+    background-color: #1b2d3c;
     color: #dee2e6;
     flex: 1;
     display: flex;
@@ -354,7 +437,7 @@ hr.long {
     padding: 20px;
 }
 /* ---------------------------------------------------------------------------- */
-/* BÃƒÂ i viÃ¡ÂºÂ¿t */
+/* Posts */
 
 /* ----------------------------------------- */
 /* Categories */
@@ -396,9 +479,6 @@ hr.long {
 }
 /* ----------------------------------- */
 /* Last posts */
-.history  {
-    /* margin-top: 50px; */
-}
 .history .widget-posts .title-posts {
     font-size: 17px;
     color: #fff;
@@ -427,7 +507,7 @@ hr.long {
     font-size: 11px;
     letter-spacing: .12em;
     color: #000;
-    background: #fff;
+    background: #000d1a;
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 35px;
